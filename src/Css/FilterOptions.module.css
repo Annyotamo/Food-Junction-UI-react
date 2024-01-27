@@ -24,7 +24,9 @@
 }
 
 .filter button:hover {
-    border-bottom: 2px solid white;
+    box-shadow: 2px 2px 5px 0px grey;
+    border-radius: 3px;
+    padding: 5px;
     cursor: pointer;
 }
 

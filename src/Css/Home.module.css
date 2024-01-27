@@ -1,0 +1,35 @@
+
+.home-container {
+    position: relative;
+    margin-left: 164px;
+    top: 70px;
+}
+
+.home-container img {
+    width: 100%;
+}
+
+.home-container > p {
+    margin: 20px;
+}
+
+.text div{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.text div img {
+    max-width: 200px;
+    display: inline;
+}
+
+.text div p {
+    width: calc(100% - 250px);
+    margin-left: 20px;
+    display: inline-block;
+}
+
+
+.home-container > div {
+    margin: 20px;
+}

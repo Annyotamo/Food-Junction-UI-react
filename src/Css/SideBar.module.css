@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+.sidebar {
+    font-family: 'Raleway', sans-serif;
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    font-weight:400;
+    top: 50px;
+    left: 0;
+    background-color: white;
+    border-right: 4px solid rgb(74, 74, 74);
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.sidebar span {
+    background-color: rgb(240, 240, 240);
+    box-shadow: 2px 2px 5px 0px grey;
+    border-radius: 3px;
+    display: inline-block;
+    width: 30px;
+    font-size: 22px;
+    padding: 3px 0px;
+    margin-left: 10px;
+    text-align: center;
+}
+
+
+.sidebar button, a {
+    display: block;
+    color: #111;
+    border: none;
+    font-size: 25px;
+    background-color: transparent;
+    text-decoration: none;
+    transition: all 1s linear;   
+    padding: 20px 10px;
+}
+
+.sidebar a:hover {
+    background-color: rgb(67, 67, 67);
+    color: white;
+    transition: all 0.3s linear;
+}
+
+.sidebar a:hover span {
+    visibility: hidden;
+}

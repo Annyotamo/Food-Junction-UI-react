@@ -26,7 +26,8 @@ export default function Menu() {
             dish.cuisine === "Korean" ||
             dish.cuisine === "Chinese" ||
             dish.cuisine === "Thai" ||
-            dish.cuisine === "Japanese"
+            dish.cuisine === "Japanese" || 
+            dish.cuisine === "Middle Eastern"
         )
       );
     } else if (filterData === "European") {
@@ -45,8 +46,7 @@ export default function Menu() {
           (dish) =>
             dish.cuisine === "American" ||
             dish.cuisine === "Mexican" ||
-            dish.cuisine === "Various" ||
-            dish.cuisine === "Middle Eastern"
+            dish.cuisine === "Various" 
         )
       );
     }

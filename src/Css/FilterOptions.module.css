@@ -45,7 +45,6 @@
 }
 
 .filter select option {
-    border-bottom: 2px solid black;
-    background-color: rgb(188, 188, 188);
+    background-color: rgb(236, 236, 236);
     box-shadow: none;
 }

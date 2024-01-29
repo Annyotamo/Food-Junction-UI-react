@@ -8,7 +8,7 @@ export default function FilterOptions({filter}) {
         <form className={styles.filter} onSubmit={(e) => {e.preventDefault(); filter(select)}}>
             <div>
                 <button type="submit" >Filter</button>
-                <select value={select} onChange={(e) => {setSelect(e.target.value)}}>
+                <select onChange={(e) => {e.preventDefault();setSelect(e.target.value)}}>
                     <option>All</option>
                     <option>Indian</option>
                     <option>Asian</option>

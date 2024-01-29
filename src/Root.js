@@ -1,11 +1,8 @@
 import SideBar from "./SideBar";
 import styles from "./Css/Root.module.css";
-import Home from "./Home";
 import { Outlet } from "react-router";
-import Menu from "./Menu";
-import { createContext, useState, useEffect, useReducer } from "react";
+import { useReducer } from "react";
 import { Context } from "./context";
-import Cart from "./Cart";
 import About from "./About";
 
 function reducer(state, action) {
@@ -50,9 +47,12 @@ export default function Root() {
             <main>
                 <SideBar></SideBar>
                 <header>
+                    <button>Login</button>
                     <h1>Food Junction</h1>
                 </header>   
-                <Outlet />  
+                <Outlet>
+                    <About />    
+                </Outlet> 
             </main>
         </Context.Provider>
     )

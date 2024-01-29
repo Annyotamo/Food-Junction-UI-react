@@ -1,6 +1,7 @@
 import styles from "./Css/Home.module.css"; 
 import { memo } from "react";
 import { homeParas } from "./info";
+
 function Home() {
     return (
         <div className={styles["home-container"]}>

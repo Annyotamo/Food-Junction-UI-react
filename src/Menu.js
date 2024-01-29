@@ -6,20 +6,22 @@ import { dishes } from "./info";
 
 
 export default function Menu() {
-  const [filterData, setFilterData] = useState("All");
+  const [filterData, setFilterData] = useState({cuisine: "All", price: "High to low"});
   const [dishArray, setDishArray] = useState([]);
 
+
+  
   useEffect(() => {
-    if (filterData === "All") {
+    if (filterData.cuisine === "All") {
       setDishArray(dishes);
-    } else if (filterData === "Indian") {
+    } else if (filterData.cuisine === "Indian") {
         setDishArray(
         dishes.filter(
           (dish) =>
             dish.cuisine === "Indian"
         )
       );
-    } else if (filterData === "Asian") {
+    } else if (filterData.cuisine === "Asian") {
       setDishArray(
         dishes.filter(
           (dish) =>
@@ -30,7 +32,7 @@ export default function Menu() {
             dish.cuisine === "Middle Eastern"
         )
       );
-    } else if (filterData === "European") {
+    } else if (filterData.cuisine === "European") {
       setDishArray(
         dishes.filter(
           (dish) =>
@@ -40,7 +42,7 @@ export default function Menu() {
             dish.cuisine === "English"
         )
       );
-    } else if (filterData === "American") {
+    } else if (filterData.cuisine === "American") {
       setDishArray(
         dishes.filter(
           (dish) =>
@@ -52,6 +54,11 @@ export default function Menu() {
     }
   }, [filterData]);
 
+  useEffect(() => {
+    if (filterData.price === "High to low") setDishArray((prev) => prev.sort((a, b) => b.price - a.price));
+    else if (filterData.price === "Low to high") setDishArray((prev) => prev.sort((a, b) => a.price - b.price));
+  }, [filterData])
+  
   return (
     <menu>
       <FilterOptions filter={setFilterData}></FilterOptions>

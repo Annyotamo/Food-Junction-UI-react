@@ -28,27 +28,28 @@ export const dishes = [
 export const homeParas = [
   {
     text:
-      "Welcome to Food Junction, a culinary haven that transcends the ordinary dining experience. Nestled in a superb location, our multi-cuisine restaurant is a gastronomic oasis that promises an exquisite journey for your taste buds. From the moment you step inside, you'll be captivated by the enticing aromas and warm ambiance that set the stage for a memorable dining adventure.",
+      "Welcome to Food Junction, a culinary haven that transcends the ordinary dining experience. Nestled in a superb location, our multi-cuisine restaurant is a gastronomic oasis that promises an exquisite journey for your taste buds. From the moment you step inside, you'll be captivated by the enticing aromas and warm ambiance that set the stage for a memorable dining adventure. Discover a world of culinary delights that reflect our passion for creating exceptional dishes and providing an unparalleled dining experience.",
     url: require("./images/home-images/para-1.jpg"),
   },
   {
     text:
-      "At Food Junction, we take pride in offering a diverse culinary experience that caters to every palate. Our extensive menu features a symphony of flavors from around the world, ensuring a delightful fusion of tastes. Whether you crave the bold spices of Indian cuisine, the savory richness of Italian dishes, or the zesty freshness of Asian delights, our chefs are dedicated to crafting dishes that will leave you craving for more.",
+      "At Food Junction, we take pride in offering a diverse culinary experience that caters to every palate. Our extensive menu features a symphony of flavors from around the world, ensuring a delightful fusion of tastes. Whether you crave the bold spices of Indian cuisine, the savory richness of Italian dishes, or the zesty freshness of Asian delights, our chefs are dedicated to crafting dishes that will leave you craving for more. Immerse yourself in a culinary journey that promises to satisfy your gastronomic cravings and elevate your dining experience to new heights.",
     url: require("./images/home-images/para-2.webp"),
   },
   {
     text:
-      "As a multi-cuisine restaurant, Food Junction is designed to cater to a variety of dining preferences. Our menu is thoughtfully curated to accommodate diverse tastes, making it an ideal destination for families, friends, and colleagues. From intimate dinners to celebratory gatherings, our spacious dining area and attentive staff create the perfect backdrop for any occasion.",
+      "As a multi-cuisine restaurant, Food Junction is designed to cater to a variety of dining preferences. Our menu is thoughtfully curated to accommodate diverse tastes, making it an ideal destination for families, friends, and colleagues. From intimate dinners to celebratory gatherings, our spacious dining area and attentive staff create the perfect backdrop for any occasion. Join us for an unforgettable dining experience where every moment is infused with flavors, laughter, and the joy of shared meals.",
     url: require("./images/home-images/para-3.webp"),
   },
   {
     text:
-      "Beyond the delectable dishes, Food Junction offers a range of amenities that elevate your dining experience. Our comfortable seating, ambient lighting, and attentive service ensure that every visit is a true indulgence. Whether you're seeking a cozy spot for a romantic dinner or a lively atmosphere for a group celebration, our restaurant provides the ideal setting for every dining need.",
+      "Beyond the delectable dishes, Food Junction offers a range of amenities that elevate your dining experience. Our comfortable seating, ambient lighting, and attentive service ensure that every visit is a true indulgence. Whether you're seeking a cozy spot for a romantic dinner or a lively atmosphere for a group celebration, our restaurant provides the ideal setting for every dining need. Revel in the unique blend of hospitality and culinary expertise that defines Food Junction.",
     url: require("./images/home-images/para-4.png"),
   },
   {
     text:
-      "At Food Junction, we understand the value of your money, and we are committed to delivering the best culinary experience without compromise. Our chefs use only the finest ingredients to prepare dishes that not only tantalize the taste buds but also provide exceptional value. Join us at Food Junction, where every meal is a celebration of flavors, a journey through cuisines, and an assurance that your dining experience will be nothing short of extraordinary.",
+      "At Food Junction, we understand the value of your money, and we are committed to delivering the best culinary experience without compromise. Our chefs use only the finest ingredients to prepare dishes that not only tantalize the taste buds but also provide exceptional value. Join us at Food Junction, where every meal is a celebration of flavors, a journey through cuisines, and an assurance that your dining experience will be nothing short of extraordinary. Indulge in a feast for the senses and create lasting memories with your loved ones.",
     url: require("./images/home-images/para-5.jpg"),
   },
-]
+];
+

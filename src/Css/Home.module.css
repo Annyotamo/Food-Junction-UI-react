@@ -16,16 +16,36 @@
 .text div{
     width: 100%;
     margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+    border-radius: 12px;
+}
+
+.text div:hover {
+    box-shadow: 5px 5px 12px 0px rgb(91, 91, 91);
+    transition: all 0.25s ease-in-out;
+}
+
+.text div:nth-child(2n) {
+    flex-direction: row-reverse;
+}
+
+.text div:nth-child(2n) {
+    text-align: right;
 }
 
 .text div img {
     max-width: 200px;
     display: inline;
+    border-radius: 12px;
 }
+
 
 .text div p {
     width: calc(100% - 250px);
-    margin-left: 20px;
+    margin: 0px 20px;
     display: inline-block;
 }
 

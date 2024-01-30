@@ -1,9 +1,10 @@
 import SideBar from "./SideBar";
 import styles from "./Css/Root.module.css";
 import { Outlet } from "react-router";
-import { useReducer } from "react";
+import { useReducer, useState } from "react";
 import { Context } from "./context";
-import About from "./About";
+import Login from "./Login";
+import Header from "./Header";
 
 function reducer(state, action) {
     switch(action.type) {
@@ -32,6 +33,7 @@ function reducer(state, action) {
 export default function Root() {
 
     const [cart, dispatch] = useReducer(reducer, [])
+    const [login, setLogin] = useState(false);
 
     function cartUpdation(name, price, src) {
 
@@ -45,14 +47,10 @@ export default function Root() {
     return (
         <Context.Provider value={{cart: cart, updateCart: cartUpdation, dispatch: dispatch}}>
             <main>
-                <SideBar></SideBar>
-                <header>
-                    <button>Login</button>
-                    <h1>Food Junction</h1>
-                </header>   
-                <Outlet>
-                    <About />    
-                </Outlet> 
+                {login && <Login setLogin={setLogin}/>}
+                <Header setLogin={setLogin}/> 
+                <SideBar />
+                <Outlet />
             </main>
         </Context.Provider>
     )

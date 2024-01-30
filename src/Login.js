@@ -7,7 +7,7 @@ export default function({setLogin}) {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
 
-    console.log(auth?.currentUser);
+    console.log(auth?.currentUser?.email);
 
     async function proceedLogin() {
         try {

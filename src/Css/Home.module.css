@@ -24,7 +24,6 @@
     justify-content: center;
     align-items: center;
     transition: all 0.2s ease-in-out;
-    border-radius: 12px;
 }
 
 .text div:hover {
@@ -41,7 +40,6 @@
 .text div img {
     max-width: 200px;
     display: inline;
-    border-radius: 12px;
 }
 
 
@@ -55,3 +53,4 @@
 .home-container > div {
     margin: 20px;
 }
+ 

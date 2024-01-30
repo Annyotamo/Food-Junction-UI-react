@@ -48,7 +48,7 @@ export default function Root() {
         <Context.Provider value={{cart: cart, updateCart: cartUpdation, dispatch: dispatch}}>
             <main>
                 {login && <Login setLogin={setLogin}/>}
-                <Header setLogin={setLogin}/> 
+                <Header setLogin={setLogin} login={login}/> 
                 <SideBar />
                 <Outlet />
             </main>

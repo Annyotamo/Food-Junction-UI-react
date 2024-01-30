@@ -4,7 +4,7 @@
     height: 50px;
     padding: 10px 0px;
     position: fixed;
-    z-index: 2;
+    z-index: 20;
     width: 100%;
     text-align: center;
     display: flex;
@@ -12,6 +12,7 @@
     justify-content: center;
     align-items: center;
 }
+
 
 .header div {
     position: absolute;
@@ -42,3 +43,41 @@
     z-index: 3;
     font-size: 40px;
 }
+
+.header > button {
+    position: absolute;
+    right: 20px;
+    border-radius: 7px;
+    border: none;
+    padding: 2px;
+}
+
+.header > button:hover {
+    border: none;
+}
+
+.header > button:hover > img {
+    width: 30px;
+}
+
+.header button img {
+    width: 25px;
+}
+
+.login {
+    width: 250px;
+    height: 200px;
+    background-color: rgb(252, 252, 252);
+    position: absolute;
+    right: 20px;
+    top: 80px;
+    z-index: 10;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px 0px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+

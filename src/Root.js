@@ -1,5 +1,5 @@
 import SideBar from "./SideBar";
-import styles from "./Css/Root.module.css";
+import "./Css/Root.module.css";
 import { Outlet } from "react-router";
 import { useReducer, useState } from "react";
 import { Context } from "./context";

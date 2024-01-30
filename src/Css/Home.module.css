@@ -13,6 +13,10 @@
     margin: 20px;
 }
 
+.text {
+    padding-bottom: 30px;
+}
+
 .text div{
     width: 100%;
     margin-bottom: 20px;
@@ -30,11 +34,9 @@
 
 .text div:nth-child(2n) {
     flex-direction: row-reverse;
-}
-
-.text div:nth-child(2n) {
     text-align: right;
 }
+
 
 .text div img {
     max-width: 200px;

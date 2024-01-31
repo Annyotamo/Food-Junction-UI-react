@@ -1,0 +1,14 @@
+.about-container {
+    margin-left: 164px;
+    top: 70px;
+    position: relative;
+    padding: 20px;
+}
+
+.about-container section{
+    margin: 20px;
+}
+
+.about-container section h2 {
+    margin-bottom: 5px;
+}

@@ -2,7 +2,7 @@ import { Link } from "react-router-dom"
 import { Context } from "./context";
 
 import styles from "./Css/SideBar.module.css"
-import { useContext, useState, useEffect } from "react"
+import { useContext } from "react"
 export default function SideBar() {
 
     const { cart } = useContext(Context);

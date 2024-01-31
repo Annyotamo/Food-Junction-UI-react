@@ -33,7 +33,7 @@ export default function({setLogin}) {
                     <button type="submit" 
                     onClick={(e) => {e.preventDefault(); proceedLogin(); setLogin(false)}}>Proceed</button>
                     
-                    <button onClick={() => setLogin(false)}>Cancel</button>
+                    <button onClick={() => setLogin(false)}>X</button>
                 </form>
             </div>
         </div>

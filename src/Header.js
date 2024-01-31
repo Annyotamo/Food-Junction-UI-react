@@ -26,8 +26,12 @@ export default function Header({setLogin, login}) {
             </header>         
             {(loginPanel && !login) && 
             <div className={styles.login}>
-                <p>Email in use</p>
-                <p>{auth?.currentUser?.email}</p>
+                {
+                    auth.currentUser ?
+                    <><p>Email in use: </p>
+                    <p>{auth?.currentUser?.email}</p> </>
+                    : <p>Login to see your email</p>
+                }
             </div>}
         </>
     )

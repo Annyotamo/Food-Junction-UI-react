@@ -13,3 +13,10 @@ menu .menu-container {
     position: relative;
     top: 120px;
 }
+
+@media screen and (max-width: 800px) {
+    menu .menu-container {
+        margin: 0px;
+        width: 100%;
+    }
+}

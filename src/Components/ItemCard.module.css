@@ -11,7 +11,7 @@
     transition: all 0.45s ease-in-out;
 }
 
-.card:hover{
+.card:hover {
     box-shadow: 10px 25px 20px 0 rgb(165, 165, 165);
     border-end-end-radius: 0px;
     border-end-start-radius: 0px;
@@ -23,7 +23,6 @@
     transition: all 0.30s ease-in-out;
     z-index: 2;
 }
-
 
 .card .add {
     background-color: rgb(228, 225, 225);
@@ -38,7 +37,7 @@
 }
 
 .card .add button {
-    cursor:pointer;
+    cursor: pointer;
     border: none;
     background-color: transparent;
     color: rgb(143, 143, 143);
@@ -49,11 +48,10 @@
 }
 
 .card .add button:hover {
-    cursor:pointer;
+    cursor: pointer;
     font-weight: bold;
     color: rgb(107, 107, 107);
 }
-
 
 .card img {
     width: 100%;
@@ -79,10 +77,19 @@
 }
 
 .card p {
-    margin: 10px
+    margin: 10px;
 }
 
 .card strong {
     margin: 10px;
     color: grey;
+}
+
+/* Responsive Styling */
+@media screen and (max-width: 800px) {
+    .card {
+        width: 200px;
+        margin: 20px 5px;
+    }
+
 }
